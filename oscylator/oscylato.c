@@ -92,7 +92,6 @@ int metoda_predkosciowa(){
     int i = 0;
 
     FILE* wp = fopen("pred_varlera.txt", "w");
-    int i = 0;
     fprintf(wp,"# \t\t\tt \t\t\tx \t\t\ty \t\t\tvx \t\t\tvy\t\tfx\t\tfy \t\t\tec\n");
    
     while (t0 < tn)
@@ -127,6 +126,8 @@ int main(int argc, char const *argv[])
         euler();
     }else if(dec == 2){
         podstawowa_varleta();
+    }else if(dec == 3){
+        metoda_predkosciowa();
     }
 
     return 0;
